@@ -36,7 +36,7 @@
 Должен быть один базовый класс, который наследуют все остальные животные.
 Базовый класс должен определять общие характеристики и интерфейс.
 
-Создадим общий класс
+Создадим Отца Отцов 
 class Fauna:
     def __init__(self, name, size, paws, hoofs, wings):
         self.name = name
@@ -78,18 +78,7 @@ class Cows(Animal):
         super().__init__(name, size, paws, hoofs, wings)
         self.hoofs = 4
 
-    # def horns(self):
-    #     self.horns = 4
-    #     print("{} имеет {} рога и {} копыта."
-    #           .format(self.name, self.horns, self.hooves))
-
-    # def give(self, milk):
-    #     self.milk = milk
-    #     self.animal_type = '"млекопитающие"'
-    #     print("{} относится к типу {} и даёт в среднем {} литров молока "
-    #           "в месяц.".format(self.name, self.animal_type, self.milk))
-
-
+   
 ducks = Birds('Утки')
 chickens = Birds('Куры')
 geese = Birds('Гуси')
