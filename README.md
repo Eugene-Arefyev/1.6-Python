@@ -38,7 +38,7 @@
 
 Создадим Отца Отцов 
 class Fauna:
-    def __init__(self, name, size, paws, hoofs, wings):
+    def __init__(self, name, size, paws, hoofs, wings): #Магический метод __init__// Инициализатор класса, не создаёт, а инициализирует
         self.name = name
         self.size = size
         self.paws = paws
