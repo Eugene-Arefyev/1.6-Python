@@ -1,28 +1,3 @@
-# # class Person:
-# #     name = "Ivan"
-# #     age = 10
-# #
-# #     def set(self, name, age):  # функция она же метод. В каждом методе должен присутствовать один ВАЖНЕЙШИЙ аргумент self
-# #         self.name = name
-# #         self.age = age
-# #
-# # class Student(Person):
-# #     course = 1
-# #
-# # igor = Student()
-# # igor.set('Igor', 19)
-# # print(igor.name)
-# #
-# # vlad = Person()
-# # vlad.set('Влад', 25)
-# # print(vlad.name + "" + str(vlad.age))
-# #
-# #
-# # ivan = Person()
-# # ivan.set('Иван', 56)
-# # print(ivan.age)
-#
-#
 # # 1.7-Python  ООП
 # # !!!Объектно - ориентированное програмирование
 # # парадигма програмирования(совокупность понятий и идей), в которой основными концепциями являются понятия объектов и классов
@@ -60,11 +35,8 @@
 #
 # # Должен быть один базовый класс, который наследуют все остальные животные.
 # # Базовый класс должен определять общие характеристики и интерфейс.
-#
-
-
 class Fauna:
-    def __init__(self, name, size): #__init__ инициализатор класса
+    def __init__(self, name, size):  # __init__ инициализатор класса
         self.name = name
         self.size = size
 
@@ -109,11 +81,9 @@ class Goat(Animal):
         super().__init__(name, size, hoofs)
         self.milk_count = horns
 
-
     def print_info(self):
         super().print_info()
         print(self.horns)
-
 
 
 class Sheep(Animal):
@@ -121,7 +91,6 @@ class Sheep(Animal):
         super().__init__(name, size, hoofs)
 
         self.wool = wool
-
 
     def print_info(self):
         super().print_info()
@@ -133,8 +102,7 @@ class Pig(Animal):
         super().__init__(name, size, hoofs)
 
         self.hoofs = hoofs
-    
-    
+
     def print_info(self):
         super().print_info()
         print(self.hoofs)
@@ -178,4 +146,3 @@ cow = Cow("бурёнка", 12, 4, 5)
 sheep = Sheep("бебе", 21, 4, 'wool')
 pig = Pig('naf-naf', 44, 4)
 goat = Goat('meme', 32, 4, 2)
-
